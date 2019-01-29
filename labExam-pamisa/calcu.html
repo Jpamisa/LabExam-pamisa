@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calcu</title>
+	<script type="text/javascript" src="calcu.js"></script>
+</head>
+<body>
+	<form name="calcu">
+
+	<script type="text/javascript" placeholder="10" id="display"></script>
+	<input type="text" name="display" id="display" disabled>
+
+	<br>
+	<br>
+	<button type="button" onclick="calcu.display.value += '1'">1</button>
+	<button type="button" onclick="calcu.display.value += '2'">2</button>
+	<button type="button" onclick="calcu.display.value += '3'">3</button>
+	<br>
+	<br>
+	<button type="button" onclick="calcu.display.value += '4'">4</button>
+	<button type="button" onclick="calcu.display.value += '5'">5</button>
+	<button type="button" onclick="calcu.display.value += '6'">6</button>
+	<br>
+	<br>
+	<button type="button" onclick="calcu.display.value += '7'">7</button>
+	<button type="button" onclick="calcu.display.value += '8'">8</button>
+	<button type="button" onclick="calcu.display.value += '9'">9</button>
+	<br>
+	<br>
+	<input type="button" class="operator" name="Addition" value="+" onclick="calcu.display.value +='+'">
+	<input type="button" class="operator" name="Subtract" value="-" onclick="calcu.display.value +='-'">
+	<input type="button" class="operator" name="Multiply" value="*" onclick="calcu.display.value +='*'">
+	<input type="button" class="operator" name="Divide" value="/" onclick="calcu.display.value +='/'">
+	<input type="button" class="operator" name="Equals" value="=" onclick="calcu.display.value = eval(calcu.display.value)">
+	<input type="button" class="reset" name="Delete" value="Delete" onclick="calcu.display.value = eval(calcu.display.value)">
+</form>
+</body>
+</html>
